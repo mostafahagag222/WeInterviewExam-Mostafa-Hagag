@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleApplication.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+495bf09e931c203862eb08b6868243e4b642b20b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08f707a3ca9c8dabe288156cceb7fc2a3fad7a06")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleApplication.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleApplication.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
