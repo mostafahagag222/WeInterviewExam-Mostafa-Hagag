@@ -1,0 +1,33 @@
+﻿@using MVC.Presentation.Models
+@model MVC.Presentation.Models.GetCuttingViewModel
+
+@{
+    ViewData["Title"] = "Add Cutting";
+}
+
+<div class="container mx-auto p-4">
+    <nav class="flex items-center bg-purple-600 text-white p-4 rounded-t-lg">
+        <button class="bg-white text-purple-600 px-4 py-2 rounded-lg shadow">Search 🔍</button>
+        <form asp-action="GetIgnored" asp-controller="Ignored" method="get">
+            <button class="px-4 py-2" type="submit">Ignored Outages</button>
+        </form>
+        <form asp-action="AddCutting" asp-controller="Cutting" method="get">
+        <button class="px-4 py-2" type="submit">Add</button>
+        </form>
+    </nav>
+
+    <!-- Search Criteria Form -->
+    <div class="bg-white shadow rounded-lg p-6 my-4">
+        @await Html.PartialAsync("_SearchCriteria", new SearchCriteriaViewModel
+        {
+            Channels = Model.Channels,
+            ProblemTypes = Model.ProblemTypes,
+            NetworkElementTypes = Model.NetworkElementTypes
+        })
+    </div>
+
+    <!-- Results Table -->
+    <div class="bg-white shadow rounded-lg p-6">
+        @await Html.PartialAsync("_ResultsTable", Model.Results)
+    </div>
+</div>

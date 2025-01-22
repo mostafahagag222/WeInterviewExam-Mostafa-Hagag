@@ -1,0 +1,14 @@
+D:\We\WeInterviewExam\ConsoleApplication.Core\bin\Debug\net8.0\ConsoleApplication.Core.deps.json
+D:\We\WeInterviewExam\ConsoleApplication.Core\bin\Debug\net8.0\ConsoleApplication.Core.runtimeconfig.json
+D:\We\WeInterviewExam\ConsoleApplication.Core\bin\Debug\net8.0\ConsoleApplication.Core.dll
+D:\We\WeInterviewExam\ConsoleApplication.Core\bin\Debug\net8.0\ConsoleApplication.Core.pdb
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.csproj.AssemblyReference.cache
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.AssemblyInfoInputs.cache
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.AssemblyInfo.cs
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.csproj.CoreCompileInputs.cache
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.dll
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\refint\ConsoleApplication.Core.dll
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.pdb
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ConsoleApplication.Core.genruntimeconfig.cache
+D:\We\WeInterviewExam\ConsoleApplication.Core\obj\Debug\net8.0\ref\ConsoleApplication.Core.dll

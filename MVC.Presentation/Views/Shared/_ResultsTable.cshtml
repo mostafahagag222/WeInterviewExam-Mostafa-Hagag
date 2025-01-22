@@ -1,0 +1,70 @@
+﻿@model List<MVC.Core.Dtos.ResultDto>
+<script src="~/js/CuttingsTable.js"></script>
+<table id="CuttingsTable" class="min-w-full border-collapse border border-gray-200">
+    <thead class="bg-gray-100">
+    <tr>
+        <th class="border border-gray-200 px-4 py-2 w-32"></th>
+        <th class="border border-gray-200 px-4 py-2 w-32"></th>
+        <th class="border border-gray-200 px-4 py-2 w-32"></th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Cutting Down Header ID</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Cutting Down Detail ID</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Channel ID</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Channel Name</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Is Planned</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Is Global</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Planned Start Date</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Planned End Date</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Created User ID</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Created User Name</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Updated User ID</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Updated User Name</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Is Active</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Actual Create Date</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Actual End Date</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Network Element ID</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Network Element Name</th>
+        <th class="border border-gray-200 px-4 py-2 w-32">Number of Impacted Customers</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="border border-gray-200 px-4 py-2 w-32">
+                <button
+                    class="btn-close-white bg-red-600 text-white px-4 py-1 rounded-lg shadow w-32 "
+                    >Close all</button>
+            </td>
+            <td class="border border-gray-200 px-4 py-2 w-32">
+                <button class="bg-purple-600 text-white px-4 py-1 rounded-lg shadow w-32">View</button>
+            </td>
+            <td class="border border-gray-200 px-4 py-2 w-32">
+                <button
+                    @(item.IsActive ? "" : "disabled=\"disabled\"")
+                    class="btn-close px-4 py-1 text-white rounded-lg shadow w-32 @(item.IsActive ? "bg-green-600" : "bg-gray-400 cursor-not-allowed")"
+                    data-id="@item.CuttingDownHeaderId">
+                    Close
+                </button>
+            </td>
+            <td class="border border-gray-200 px-4 py-2 w-32" data-column="header-id">@item.CuttingDownHeaderId</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.CuttingDownDetailId</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.ChannelId</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.ChannelName</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.IsPlanned</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.IsGlobal</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.PlannedStart?.ToString("yyyy-MM-dd")</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.PlannedEnd?.ToString("yyyy-MM-dd")</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.CreatedUserId</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.CreatedUserName</td>
+            <td class="border border-gray-200 px-4 py-2 w-32" data-column="updated-user-id">@item.UpdatedUserId</td>
+            <td class="border border-gray-200 px-4 py-2 w-32" data-column="updated-user-name">@item.UpdatedUserName</td>
+            <td class="border border-gray-200 px-4 py-2 w-32" data-column="is-active">@item.IsActive</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.ActualCreateDate.ToString("yyyy-MM-dd")</td>
+            <td class="border border-gray-200 px-4 py-2 w-32" data-column="actual-end-date">@item.ActualEndDate?.ToString("yyyy-MM-dd")</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.NetWorkElementId</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.NetworkElementName</td>
+            <td class="border border-gray-200 px-4 py-2 w-32">@item.ImpactedCustomers</td>
+        </tr>
+    }
+    </tbody>
+</table>

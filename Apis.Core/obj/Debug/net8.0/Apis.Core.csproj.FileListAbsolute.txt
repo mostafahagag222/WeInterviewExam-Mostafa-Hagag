@@ -1,0 +1,14 @@
+D:\We\WeInterviewExam\Apis.Core\bin\Debug\net8.0\Apis.Core.deps.json
+D:\We\WeInterviewExam\Apis.Core\bin\Debug\net8.0\Apis.Core.runtimeconfig.json
+D:\We\WeInterviewExam\Apis.Core\bin\Debug\net8.0\Apis.Core.dll
+D:\We\WeInterviewExam\Apis.Core\bin\Debug\net8.0\Apis.Core.pdb
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.csproj.AssemblyReference.cache
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.AssemblyInfoInputs.cache
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.AssemblyInfo.cs
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.csproj.CoreCompileInputs.cache
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.dll
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\refint\Apis.Core.dll
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.pdb
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\Apis.Core.genruntimeconfig.cache
+D:\We\WeInterviewExam\Apis.Core\obj\Debug\net8.0\ref\Apis.Core.dll

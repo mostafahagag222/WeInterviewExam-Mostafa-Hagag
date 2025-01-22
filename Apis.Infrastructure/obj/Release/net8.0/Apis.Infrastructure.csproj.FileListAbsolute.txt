@@ -1,0 +1,15 @@
+D:\We\WeInterviewExam\Apis.Infrastructure\bin\Release\net8.0\Apis.Infrastructure.deps.json
+D:\We\WeInterviewExam\Apis.Infrastructure\bin\Release\net8.0\Apis.Infrastructure.dll
+D:\We\WeInterviewExam\Apis.Infrastructure\bin\Release\net8.0\Apis.Infrastructure.pdb
+D:\We\WeInterviewExam\Apis.Infrastructure\bin\Release\net8.0\Apis.Core.dll
+D:\We\WeInterviewExam\Apis.Infrastructure\bin\Release\net8.0\Apis.Core.pdb
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.csproj.AssemblyReference.cache
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.AssemblyInfoInputs.cache
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.AssemblyInfo.cs
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.csproj.CoreCompileInputs.cache
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Inf.179ADB91.Up2Date
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.dll
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\refint\Apis.Infrastructure.dll
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\Apis.Infrastructure.pdb
+D:\We\WeInterviewExam\Apis.Infrastructure\obj\Release\net8.0\ref\Apis.Infrastructure.dll

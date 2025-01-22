@@ -1,0 +1,90 @@
+﻿<form asp-action="SearchForCuttings" method="post" asp-controller="Cutting">
+    <div class="grid grid-cols-2 gap-4">
+        <!-- Channel -->
+        <div>
+            <label for="ChannelId" class="block text-sm font-medium text-gray-700">Source Of Cutting Down</label>
+            <select id="ChannelId" name="ChannelId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                <option value="@null">Please Select</option>
+                @foreach (var item in Model.Channels)
+                {
+                    <option value="@item.Value">@item.Text</option>
+                }
+            </select>
+        </div>
+
+        <!-- Problem Type -->
+        <div>
+            <label for="ProblemTypeId" class="block text-sm font-medium text-gray-700">Problem Type Of Cutting Down</label>
+            <select id="ProblemTypeId" name="ProblemTypeId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                <option value="@null">Please Select</option>
+                @foreach (var item in Model.ProblemTypes)
+                {
+                    <option value="@item.Value">@item.Text</option>
+                }
+            </select>
+        </div>
+
+        <!-- Status -->
+        <div>
+            <label for="IsActive" class="block text-sm font-medium text-gray-700">Status</label>
+            <select id="IsActive" name="IsActive" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                <option value="@null">Please Select</option>
+                <option value="@false">Closed</option>
+                <option value="@true">Opened</option>
+            </select>
+        </div>
+        <div>
+
+        </div>
+        <!-- Search Criteria -->
+        <div>
+            <label for="NetworkElementTypeId" class="block text-sm font-medium text-gray-700">Search Criteria</label>
+            <select onchange="toggleInput()" id="NetworkElementTypeId" name="NetworkElementTypeId" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm">
+                <option value="@null">Please Select</option>
+                @foreach (var type in Model.NetworkElementTypes)
+                {
+                    <option value="@type.Value">@type.Text</option>
+                }
+            </select>
+        </div>
+
+        <div>
+            <label for="SearchKey" class="block text-sm font-medium text-gray-700">
+                Search Value
+            </label>
+            <input type="text" id="SearchKey" name="SearchKey" class="mt-2 block w-full rounded-md border-gray-300 shadow-sm" @(Model.NetworkElementTypeId == null ? "disabled" : "")>
+        </div>
+    </div>
+
+    <!-- Search Button -->
+    <div class="mt-4">
+        <button type="submit" class="bg-purple-600 text-white px-6 py-2 rounded-lg shadow hover:bg-purple-700">
+            Search
+        </button>
+    </div>
+</form>
+
+<script>
+    // Grab the searchKey input and the dropdown for NetworkElementTypeId
+    const searchKeyInput = document.getElementById('SearchKey');
+    const networkElementTypeSelect = document.getElementById('NetworkElementTypeId');
+
+    // Get the initial value from the model to determine if it's null or not
+    const initialNetworkElementTypeId = "@Model.NetworkElementTypeId";
+
+    // Function to toggle the disabled state
+    function toggleInput() {
+        if (networkElementTypeSelect.value === "" || networkElementTypeSelect.value === "@null") {
+            searchKeyInput.setAttribute('disabled', 'disabled');
+            searchKeyInput.value = null;
+        } else {
+            searchKeyInput.removeAttribute('disabled');
+        }
+    }
+
+    // Call the function to set initial state
+    toggleInput();
+
+    // Add event listener to toggle based on user interaction
+    networkElementTypeSelect.addEventListener('change', toggleInput);
+</script>

@@ -1,0 +1,52 @@
+﻿@using MVC.Presentation.Models
+@model MVC.Presentation.Models.IgnoredCuttings
+
+@{
+    ViewData["Title"] = "Ignored Cutting";
+}
+<script src="~/js/DeleteIgnored.js"></script>
+
+<div class="container p-4">
+    <div>
+        <nav class="flex items-center bg-purple-600 text-white p-4 rounded-t-lg mb-4">
+            <form asp-action="Master" asp-controller="Cutting" method="get">
+                <button class="px-4 py-2">Search</button>
+            </form>
+            <button class="bg-white text-purple-600 px-4 py-2 rounded-lg shadow">Ignored Outages 🔍</button>
+            <form asp-action="AddCutting" asp-controller="Cutting" method="get">
+                <button class="px-4 py-2" type="submit">Add</button>
+            </form>
+        </nav>
+    </div>
+
+    <div class="bg-white shadow rounded-lg p-6">
+        <table id="cuttingIgnoredTable" class="min-w-full border-collapse border border-gray-200">
+            <thead class="bg-gray-100">
+            <tr>
+                <th class="border border-gray-200 px-4 py-2 w-32"></th>
+                <th class="border border-gray-200 px-4 py-2 w-32">Ignore Cutting Id</th>
+                <th class="border border-gray-200 px-4 py-2 w-32">Actual Create Date</th>
+                <th class="border border-gray-200 px-4 py-2 w-32">Sync Create Date</th>
+                <th class="border border-gray-200 px-4 py-2 w-32">Cabin Name</th>
+                <th class="border border-gray-200 px-4 py-2 w-32">Cable Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.IgnoredCuttingsList)
+            {
+                <tr>
+                    <td class="border border-gray-200 px-4 py-2 w-32">
+                        <button class="delete-button bg-purple-600 text-white px-4 py-1 rounded-lg shadow w-32" data-id="@item.Id">Delete</button>
+                    </td>
+                    <td class="border border-gray-200 px-4 py-2 w-32">@item.Id</td>
+                    <td class="border border-gray-200 px-4 py-2 w-32">@item.ActualCreate</td>
+                    <td class="border border-gray-200 px-4 py-2 w-32">@item.SyncCreate</td>
+                    <td class="border border-gray-200 px-4 py-2 w-32">@item.CabinName</td>
+                    <td class="border border-gray-200 px-4 py-2 w-32">@item.CableName</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+
+</div>

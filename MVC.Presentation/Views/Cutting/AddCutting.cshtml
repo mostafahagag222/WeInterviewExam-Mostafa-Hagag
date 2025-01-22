@@ -1,0 +1,117 @@
+﻿@using MVC.Presentation.Models
+@model MVC.Presentation.Models.AddCuttingViewModel
+
+@{
+    ViewData["Title"] = "Add Cutting";
+}
+<script src="~/js/script1.js" defer></script>
+<script src="~/js/HierarchyExpansion.js"></script>
+
+
+<div class="container mx-auto p-4">
+    <nav class="flex items-center bg-purple-600 text-white p-4 rounded-t-lg">
+        <form asp-action="Master" asp-controller="Cutting" method="get">
+            <button class="px-4 py-2" type="submit">Search 🔍</button>
+        </form>
+        <form asp-action="GetIgnored" asp-controller="Ignored" method="get">
+            <button class="px-4 py-2" type="submit">Ignored Outages</button>
+        </form>
+        <button class="bg-white text-purple-600 px-4 py-2 rounded-lg shadow">Add</button>
+    </nav>
+
+    <form asp-controller="Cutting" asp-action="AddCutting" method="post">
+        <input type="hidden" id="NetworkElementId1" name="NetworkElementId" value=""/>
+        <div class="p-6 bg-white shadow-md rounded-md m-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-gray-700 font-medium">Network Hierarchy</label>
+                    <select name="HiearchyAbb" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        @foreach (var item in Model.HierarchyTypes)
+                        {
+                            <option value="@item.Text">@item.Text</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">Problem Type</label>
+                    <select name="ProblemTypeId" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+                        @foreach (var type in Model.ProblemTypes)
+                        {
+                            <option value="@type.Value">@type.Text</option>
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <label class="block text-gray-700 font-medium">Start Date</label>
+                <input value="@DateTime.Now.ToString("yyyy-MM-dd")" name="StartDate" type="date" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-400">
+            </div>
+
+            <div class="mt-4">
+                <label class="block text-gray-700 font-medium">Search Criteria</label>
+                <select name="NetworkElementId" class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+                    @foreach (var type in Model.NetworkElementTypes)
+                    {
+                        <option value="@type.Value">@type.Text</option>
+                    }
+                </select>
+                <input type="text" placeholder="Search Value" class="mt-2 w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400">
+            </div>
+
+            <div class="flex justify-between mt-4">
+                <!-- Right: Search Button -->
+                <button type="button" class="bg-purple-500 text-white px-6 py-2 rounded-md hover:bg-purple-600">
+                    Search
+                </button>
+                <!-- Left: Add Button -->
+                <button type="submit" id="addCuttingButton" class="bg-purple-500 text-white px-6 py-2 rounded-md hover:bg-purple-600">
+                    Add
+                </button>
+
+            </div>
+            <div class="flex space-x-4 p-4 bg-gray-100">
+                <!-- Left Panel: Expandable Hierarchy -->
+
+                <div id="hierarchy-container" class="container mx-auto p-4">
+                    <div class="w-2/3 bg-white rounded shadow p-4">
+                        <h2 class="text-lg font-bold mb-4">Network Hierarchy</h2>
+                        <ul class="space-y-2">
+                            @foreach (var element in Model.NetworkElementDtos)
+                            {
+                                @await Html.PartialAsync("_NetworkHierarchyPartial", element)
+                            }
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Arrow Button -->
+                <div class="flex items-center">
+                    <button type="button" id="arrowButton" style="height: 100%; align-self: center" class="bg-gray-200 hover:bg-gray-300 text-gray-600 font-bold py-2 px-4 rounded shadow">
+                        &raquo;
+                        &raquo;
+                        &raquo;
+                        &raquo;
+                    </button>
+                </div>
+
+                <!-- Right Panel: Table -->
+                <div class="w-2/3 bg-white rounded shadow p-4">
+                    <table class="table-auto w-full border-collapse">
+                        <thead>
+                        <tr class="bg-gray-200 text-left">
+                            <th class="px-4 py-2">Network Element</th>
+                            <th class="px-4 py-2">Number of Impacted Customers</th>
+                            <th class="px-4 py-2">Cutting Incident ID</th>
+                            <th class="px-4 py-2">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</div>

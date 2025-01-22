@@ -1,0 +1,15 @@
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\bin\Debug\net8.0\ConsoleApplication.Infrastructure.deps.json
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\bin\Debug\net8.0\ConsoleApplication.Infrastructure.dll
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\bin\Debug\net8.0\ConsoleApplication.Infrastructure.pdb
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\bin\Debug\net8.0\ConsoleApplication.Core.dll
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\bin\Debug\net8.0\ConsoleApplication.Core.pdb
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.csproj.AssemblyReference.cache
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.AssemblyInfoInputs.cache
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.AssemblyInfo.cs
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.csproj.CoreCompileInputs.cache
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleA.6CC42675.Up2Date
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.dll
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\refint\ConsoleApplication.Infrastructure.dll
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ConsoleApplication.Infrastructure.pdb
+D:\We\WeInterviewExam\ConsoleApplication.Infrastructure\obj\Debug\net8.0\ref\ConsoleApplication.Infrastructure.dll

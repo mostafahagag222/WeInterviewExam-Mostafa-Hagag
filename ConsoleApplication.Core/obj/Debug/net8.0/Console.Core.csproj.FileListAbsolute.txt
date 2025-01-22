@@ -1,0 +1,11 @@
+D:\We\WeInterviewExam\Console.Core\bin\Debug\net8.0\Console.Core.deps.json
+D:\We\WeInterviewExam\Console.Core\bin\Debug\net8.0\Console.Core.dll
+D:\We\WeInterviewExam\Console.Core\bin\Debug\net8.0\Console.Core.pdb
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\Console.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\Console.Core.AssemblyInfoInputs.cache
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\Console.Core.AssemblyInfo.cs
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\Console.Core.csproj.CoreCompileInputs.cache
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\Console.Core.dll
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\refint\Console.Core.dll
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\Console.Core.pdb
+D:\We\WeInterviewExam\Console.Core\obj\Debug\net8.0\ref\Console.Core.dll
